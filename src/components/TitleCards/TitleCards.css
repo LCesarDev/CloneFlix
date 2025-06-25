@@ -13,6 +13,11 @@
     overflow-x: scroll;
 }
 
+.card-list::-webkit-scrollbar{
+    display: none;
+    
+}
+
 .card-list img{
     width: 240px;
     border-radius: 4px;
