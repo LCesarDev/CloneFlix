@@ -1,3 +1,8 @@
+.nav-dark{
+    background: #141414 !important;
+}
+
+
 .navbar{
     width: 100%;
     padding: 20px 6%;
@@ -69,6 +74,8 @@
     font-size: 13px;
     cursor: pointer;
 }
+
 .navbar-profile:hover .dropdown{
     display: block;
 }
+
