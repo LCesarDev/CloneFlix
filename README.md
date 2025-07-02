@@ -1,12 +1,58 @@
-# React + Vite
+# 🎬 CloneFlix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clone da interface da Netflix desenvolvido com React e Vite. O projeto consome dados da API do TMDB (The Movie Database) para exibir filmes em destaque e listas dinâmicas. Também utiliza o Firebase para autenticação de usuários e exibe trailers reais ao clicar referente ao filme.
 
-Currently, two official plugins are available:
+🔗 **Acesse online:** [https://clone-flix-tau.vercel.app/](https://clone-flix-tau.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Firebase (Autenticação)
+- TMDB API (Dados e vídeos)
+- Responsividade com Media Queries
+- Deploy com Vercel
+
+---
+
+## 🔌 Integrações
+
+- 🔐 **Firebase**: Gerenciamento de login e cadastro de usuários
+- 🎞️ **TMDB API**: Listagem de filmes, destaques e vídeos (trailers)
+
+---
+
+## 📁 Componentes Principais
+
+- **Header**: Navegação fixa no topo
+- **FeaturedMovie**: Destaque do dia com imagem e descrição real
+- **MovieRow**: Carrossel de filmes baseado em categorias
+- **VideoPlayer**: Exibição de trailer ao clicar em um filme
+- **Login/Cadastro**: Autenticação com Firebase
+- **App**: Estrutura e controle principal da aplicação
+
+---
+
+## 🎯 Funcionalidades
+
+- Layout inspirado na Netflix
+- Consumo dinâmico da API do TMDB
+- Exibição de trailers ao clicar em um filme
+- Autenticação de usuários com Firebase
+- Componentes reutilizáveis e organizados
+- Interface 100% responsiva
+
+---
+
+## ▶️ Como rodar localmente
+
+```bash
+git clone https://github.com/LCesarDev/CloneFlix.git
+cd CloneFlix
+npm install
+npm run dev
