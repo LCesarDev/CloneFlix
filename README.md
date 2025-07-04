@@ -2,7 +2,7 @@
 
 Clone da interface da Netflix desenvolvido com React e Vite. O projeto consome dados da API do TMDB (The Movie Database) para exibir filmes em destaque e listas dinâmicas. Também utiliza o Firebase para autenticação de usuários e exibe trailers reais ao clicar referente ao filme.
 
-🔗 **Acesse online:** [https://clone-flix-tau.vercel.app/](https://clone-flix-tau.vercel.app/)
+🔗 **Acesse online:** [https://site-1-pink.vercel.app/](https://site-1-pink.vercel.app/)
 
 ---
 
