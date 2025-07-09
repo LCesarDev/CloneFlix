@@ -3,11 +3,6 @@ import './TitleCards.css'
 import { Link } from 'react-router-dom'
 
 
-const TitleCards = ({title, category}) => {
-
-  const[apiData, setApiData] = useState([]);
-
-const cardsRef = useRef();
 
 const options = {
   method: 'GET',
@@ -17,6 +12,12 @@ const options = {
   }
 };
 
+
+const TitleCards = ({title, category}) => {
+
+  const[apiData, setApiData] = useState([]);
+
+const cardsRef = useRef();
 
 
 const handleWheel = (event)=>{
@@ -31,8 +32,15 @@ useEffect(()=>{
   .then(res => setApiData(res.results))
   .catch(err => console.error(err));
 
-  cardsRef.current.addEventListener('wheel', handleWheel);
-},[])
+  const currentRef = cardsRef.current;
+  if (!currentRef) return;
+
+  currentRef.addEventListener('wheel', handleWheel);
+
+  return () => {
+    currentRef.removeEventListener('wheel', handleWheel);
+  };
+}, [category]);
 
   return (
     <div className='title-cards'>

@@ -1,9 +1,10 @@
 .player{
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    padding: 5px;
+    padding: 10px;
 }
 
 .player img{
@@ -12,20 +13,33 @@
     left: 20px;
     width: 50px;
     cursor: pointer;
+    opacity: 0.5;
 }
 
-.player iframe {
-  width: 75%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  border-radius: 10px;
-  display: block;
+.player iframe{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
 }
 
 .player-info{
-    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
+}
+
+@media (max-width: 768px){
+   .player-info{
+   display: contents;
+   font-size: 10px;
+   }
+
+   .player img{
+    width: 8%;
+   }
+
+   .player{
+    padding: 20px;
+   }
 }

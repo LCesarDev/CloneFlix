@@ -39,12 +39,12 @@ useEffect(()=>{
   return (
     <div className='player'>
       <img src={back_arrow_icon} alt="" onClick={()=>{navigate('/')}}/>
-      <iframe
-      src={`https://www.youtube.com/embed/${apiData.key}`}
-      title='trailer' frameBorder='0' allowFullScreen></iframe>
+      <iframe 
+      src={`https://www.youtube.com/embed/${apiData.key}?autoplay=1&mute=1`}
+      title='trailer' frameBorder='0' allowFullScreen allow="autoplay"></iframe>
 
       <div className="player-info">
-        <p>{apiData.published_at.slice(0,10)}</p>
+        <p>{apiData.published_at?.slice(0,10)}</p>
         <p>{apiData.name}</p>
         <p>{apiData.type}</p>
       </div>
