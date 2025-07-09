@@ -1,9 +1,9 @@
 .player{
-    height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    padding: 5px;
 }
 
 .player img{
@@ -14,11 +14,16 @@
     cursor: pointer;
 }
 
-.player iframe{
-    border-radius: 10px;
+.player iframe {
+  width: 75%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
 
 .player-info{
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;

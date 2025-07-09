@@ -38,8 +38,8 @@ useEffect(()=>{
 
   return (
     <div className='player'>
-      <img src={back_arrow_icon} alt="" onClick={()=>{navigate(-2)}}/>
-      <iframe width='90%' height='90%'
+      <img src={back_arrow_icon} alt="" onClick={()=>{navigate('/')}}/>
+      <iframe
       src={`https://www.youtube.com/embed/${apiData.key}`}
       title='trailer' frameBorder='0' allowFullScreen></iframe>
 
